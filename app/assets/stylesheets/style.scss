@@ -2,6 +2,15 @@ html,body{
 	margin: 0px;
 	font-family: 'Open Sans', sans-serif;
 }
+.btn{
+	background-color: inherit;
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 1.2em;
+	padding: 10px;
+}
 .be-red{
 	background-color: #E74C3C;
 }
@@ -18,4 +27,13 @@ html,body{
 a,a:visited{
 	color: inherit;
 	text-decoration: none;
+}
+.form-control{
+	border: none;
+	border-bottom: 1px solid;
+	outline: none;
+	width: 100%;
+	display:block;
+	padding: 10px 0px;
+	font-size: 1.2em; 
 }

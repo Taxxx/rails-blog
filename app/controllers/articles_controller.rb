@@ -13,6 +13,7 @@ class ArticlesController < ApplicationController
 		#Where
 		#Article.where("body LIKE ?","%hola%")
 		@article.update_visit_count
+		@comment = Comment.new
 	end
 	#GET /articles/new
 	def new

@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
-  resources :comments
+  
 
   devise_for :users
   #get 'welcome/index'
-
-resources :articles
+#Nested  resources para Mi blog (hacemos que los comentarios estenrelacionados a un articulo)
+resources :articles do
+  resources :comments, only: [:create, :destroy, :update]
+end
 =begin
     get "/articles" -> index
     post "/articles" -> create
@@ -21,6 +23,9 @@ resources :articles
 
   # You can have the root of your site routed with "root"
    root 'welcome#index'
+
+   
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

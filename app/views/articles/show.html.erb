@@ -2,6 +2,7 @@
 <% unless @article.user.nil? %>
 	<p>Escrito por: <%= @article.user.email %> </p>
 <%end%>
+<p>Visitas: <%= @article.visit_count %> </p>
 <div>
 	<%= @article.body %>
 </div>
